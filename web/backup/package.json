@@ -1,0 +1,15 @@
+{
+  "name": "pruebas",
+  "version": "1.0.1",
+  "description": "realizar pruebas de paquetes de js ",
+  "main": "index.js",
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fany",
+  "license": "ISC"
+}
