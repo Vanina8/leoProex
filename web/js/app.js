@@ -21,7 +21,12 @@ const app = new Vue({
         codigoAgente:'',
 
         etiquetaEstadoA: "Activo",
-        etiquetaEstadoB: "Inactivo"
+        etiquetaEstadoB: "Inactivo",
+
+        filEquip:'',
+        filPol:'',
+        filPod:'',
+        filCodigo:''
 
       },
     created(){
@@ -36,6 +41,18 @@ const app = new Vue({
                 return filtro.match(this.codigoAgente) 
         });
       }, 
+      datosFiltradosDestinos(){
+
+        // return this.listarDestinos.filter((filtro)=>{
+        //         return filtro.match(this.filEquip) 
+        // });
+
+        return this.listaDestinos.filter((filtro)=>{
+          return filtro.equipment.toUpperCase().match(this.filEquip.toUpperCase()) || filtro.pol.toUpperCase().match(this.filPol.toUpperCase()) || filtro.pod.toUpperCase().match(this.pod.toUpperCase())
+        });
+      }, 
+
+
     },
       methods:{
         getUsuarios(){         
