@@ -11,16 +11,54 @@ include "../includes/menucompleto2.php";
 <div class="container_fluid pt-5">
     
     <table class="table table-hover ">
-        <thead>
+    <thead>
           <tr>
           
-
-
-            <th scope="col">Id</th><th scope="col">Código</th><th scope="col">Equipment</th><th scope="col">Pol</th><th scope="col">Pod</th><th scope="col">Carrier</th><th scope="col">Vessel</th><th scope="col">Closing</th><th scope="col">Etd</th><th scope="col">Eta</th><th scope="col">Cost</th><th scope="col">Div Cost</th><th scope="col">Precio</th><th scope="col">Div Precio</th><th scope="col">Estado</th><th scope="col">Observación</th>  
-
-
+            <th scope="col">Id</th>
+            <th scope="col">
+                <div>
+                    Código
+                </div>
+                <div>
+                  <input type="text" class="form-control" id="codigo_fil" v-model='filCodigo'>
+                </div>
+              </th>
+            <th scope="col">
+              <div>
+                     Equipment
+                </div>
+                <div>
+                  <input type="text" class="form-control" id="equipment_fil" v-model='filEquip'>
+                </div>
+            </th>
+            <th scope="col">
+                <div>
+                        Pol
+                </div>
+                <div>
+                  <input type="text" class="form-control" id="pol_fil" v-model='filPol'>
+                </div>
+            </th>
+            <th scope="col">
+                <div>
+                    Pod
+                </div>
+                <div>
+                  <input type="text" class="form-control" id="pod_fil" v-model='filPod'>
+                </div>
+            </th>
+            <th scope="col">Carrier</th>
+            <th scope="col">Vessel</th>
+            <th scope="col">Closing</th>
+            <th scope="col">Etd</th>
+            <th scope="col">Eta</th>
+            <th scope="col">Cost</th>
+            <th scope="col">Div Cost</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Div Precio</th>
+            <th scope="col">Estado</th>
+            <th scope="col">Observación</th>  
           </tr>
-        </thead>
         <tbody>
           <!-- <tr>
             <th scope="row">1</th>
